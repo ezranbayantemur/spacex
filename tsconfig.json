@@ -1,3 +1,18 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@style": ["src/style"],
+      "@components": ["src/components"],
+      "@types": ["src/types"],
+      "@enums": ["src/enums"],
+      "@hooks": ["src/hooks"],
+      "@features": ["src/redux/features"],
+      "@utils": ["src/utils"],
+      "@route": ["src/router"],
+      "@mocks/*": ["__mocks__/*"],
+      "@helpers/*": ["src/helpers/*"]
+    }
+  }
 }

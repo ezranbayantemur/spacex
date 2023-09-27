@@ -1,5 +1,4 @@
-import React from 'react';
-import {Alert, View} from 'react-native';
+import {Alert} from 'react-native';
 import Button from './Button';
 import type {Meta, StoryObj} from '@storybook/react-native';
 import type {ButtonProps} from './Button.types';

@@ -48,6 +48,8 @@ try {
 const getStories = () => {
   return {
     "./src/components/Button/Button.stories.tsx": require("../src/components/Button/Button.stories.tsx"),
+    "./src/components/DatePicker/DatePicker.stories.tsx": require("../src/components/DatePicker/DatePicker.stories.tsx"),
+    "./src/components/DateRangeSelector/DateRangeSelector.stories.tsx": require("../src/components/DateRangeSelector/DateRangeSelector.stories.tsx"),
   };
 };
 

@@ -1,9 +1,10 @@
 import React from 'react';
 import {Text, View} from 'react-native';
-import {Button, DatePicker} from '@components';
 import {isEqual} from 'date-fns';
+import Button from '../Button';
+import DatePicker from '../DatePicker';
 import styles from './DateRangeSelector.styles';
-import {DateRangeSelectorProps} from './DateRangeSelector.types';
+import type {DateRangeSelectorProps} from './DateRangeSelector.types';
 
 const DateRangeSelector = ({onSearch}: DateRangeSelectorProps) => {
   const [startDate, setStartDate] = React.useState<Date>(new Date());

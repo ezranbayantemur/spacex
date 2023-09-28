@@ -8,7 +8,6 @@
       "@types": ["src/types"],
       "@enums": ["src/enums"],
       "@hooks": ["src/hooks"],
-      "@features": ["src/redux/features"],
       "@utils": ["src/utils"],
       "@route": ["src/router"],
       "@mocks/*": ["__mocks__/*"],

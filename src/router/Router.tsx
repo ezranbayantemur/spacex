@@ -4,6 +4,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import routes from './routes';
 import {Home, Search} from '../pages';
+import {color, font, typography} from '@style';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,7 +16,20 @@ const Router = () => {
           headerShown: false,
         }}>
         <Stack.Screen name={routes.HOME} component={Home} />
-        <Stack.Screen name={routes.SEARCH} component={Search} />
+        <Stack.Screen
+          name={routes.SEARCH}
+          component={Search}
+          options={{
+            headerShown: true,
+            headerTitle: 'SPACEX FLIGHTS',
+            headerTitleStyle: {
+              fontFamily: font.BOLD,
+              fontSize: typography.MEDIUM,
+            },
+            headerBackTitleVisible: false,
+            headerTintColor: color.BLACK,
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

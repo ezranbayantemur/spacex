@@ -3,9 +3,12 @@ import {color, padding, font, typography} from '@style';
 
 const base = StyleSheet.create({
   container: {
-    backgroundColor: color.MERCURY,
-    padding: padding.MEDIUM,
-    margin: padding.SMALL,
+    borderBottomWidth: 1,
+    borderBottomColor: color.MERCURY,
+    paddingTop: padding.MEDIUM,
+    paddingBottom: padding.SMALL,
+    margin: padding.MEDIUM,
+    marginVertical: padding.SMALL,
   },
   input: {
     padding: 0,

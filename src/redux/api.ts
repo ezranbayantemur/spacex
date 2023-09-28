@@ -14,9 +14,14 @@ export const api = createApi({
         url: '/query',
         method: 'POST',
         body: {
-          date_utc: {
-            $gte: startDate,
-            $lte: endDate,
+          query: {
+            static_fire_date_utc: {
+              $gte: startDate,
+              $lte: endDate,
+            },
+          },
+          options: {
+            limit: 20,
           },
         },
       }),

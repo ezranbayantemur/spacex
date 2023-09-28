@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button unit tests should render correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "margin": 16,
+      "padding": 16,
+    }
+  }
+>
+  <Image
+    resizeMode="contain"
+    source={
+      {
+        "uri": "https://images2.imgbox.com/94/f2/NN6Ph45r_o.png",
+      }
+    }
+    style={
+      {
+        "height": 50,
+        "width": 50,
+      }
+    }
+  />
+  <Text
+    style={
+      {
+        "fontFamily": "Quicksand-Bold",
+        "fontSize": 20,
+      }
+    }
+  >
+    FalconSat
+  </Text>
+  <Text
+    style={
+      {
+        "fontFamily": "Quicksand-Regular",
+        "fontSize": 17,
+      }
+    }
+  >
+    17 March 2006
+  </Text>
+</View>
+`;

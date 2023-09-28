@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input unit tests should render correctly 1`] = `
+<View>
+  <View
+    style={
+      {
+        "backgroundColor": "#E1E1E1",
+        "margin": 8,
+        "padding": 16,
+      }
+    }
+  >
+    <TextInput
+      style={
+        {
+          "fontFamily": "Quicksand-Regular",
+          "fontSize": 15,
+          "padding": 0,
+        }
+      }
+      testID="undefined_input"
+    />
+  </View>
+</View>
+`;

@@ -1,3 +1,8 @@
+export interface OnSearchCallbackProps {
+  start: Date;
+  end: Date;
+}
+
 export interface DateRangeSelectorProps {
-  onSearch: (dates: {start: Date; end: Date}) => void;
+  onSearch: (dates: OnSearchCallbackProps) => void;
 }

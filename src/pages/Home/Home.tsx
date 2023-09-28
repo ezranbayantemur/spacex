@@ -1,15 +1,22 @@
 import {SafeAreaView, View, Text, Image} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 import {DateRangeSelector} from '@components';
 import styles from './Home.styles';
+import {routes} from '@route';
+import type {OnSearchCallbackProps} from '@components/DateRangeSelector';
 
 const BACKGROUND_IMAGE = require('../../assets/rocket.png');
 
 const Home = () => {
-  const handleSearch = () => {};
+  const navigation = useNavigation<any>();
+
+  const handleSearch = ({start, end}: OnSearchCallbackProps) => {
+    navigation.navigate(routes.SEARCH, {start, end});
+  };
 
   return (
     <>
-      <SafeAreaView style={{flex: 1}}>
+      <SafeAreaView style={styles.container}>
         <View style={styles.container}>
           <Image
             style={styles.image}
@@ -20,7 +27,7 @@ const Home = () => {
             <Text style={styles.header_title_text}>SPACEX FLIGHTS</Text>
             <Text style={styles.content_text}>Search for flights</Text>
 
-            <DateRangeSelector onSearch={console.log} />
+            <DateRangeSelector onSearch={handleSearch} />
           </View>
         </View>
       </SafeAreaView>

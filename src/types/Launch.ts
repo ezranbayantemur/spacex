@@ -11,7 +11,7 @@ interface Patch {
 }
 
 interface Reddit {
-  campaign: string;
+  campaign: string | null;
   launch: string;
   media: string;
   recovery: string;

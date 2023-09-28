@@ -21,7 +21,7 @@ export const api = createApi({
             },
           },
           options: {
-            limit: 20,
+            limit: 50,
           },
         },
       }),

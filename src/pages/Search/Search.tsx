@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, View, FlatList, ListRenderItem} from 'react-native';
+import {SafeAreaView, View, FlatList, type ListRenderItem} from 'react-native';
 import {useRoute} from '@react-navigation/native';
 import {LaunchItem, SearchBar} from '@components';
 import styles from './Search.styles';
@@ -21,6 +21,7 @@ const Search = () => {
   const renderLaunch: ListRenderItem<Launch> = ({item}) => {
     return (
       <LaunchItem
+        id={item.id}
         name={item.name}
         date={item.static_fire_date_utc}
         image={item.links.patch.small}

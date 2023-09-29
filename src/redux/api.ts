@@ -1,5 +1,6 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 import type {LaunchResponseType, LaunchRequestType} from './types';
+import type {Launch} from '@types';
 
 const API_URL = 'https://api.spacexdata.com/v4/launches';
 
@@ -29,7 +30,10 @@ export const api = createApi({
         },
       }),
     }),
+    getLaunch: builder.query<Launch, LaunchRequestType>({
+      query: id => `/${id}`,
+    }),
   }),
 });
 
-export const {usePostLaunchesMutation} = api;
+export const {usePostLaunchesMutation, useGetLaunchQuery} = api;

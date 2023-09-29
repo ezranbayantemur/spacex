@@ -22,6 +22,9 @@ export const api = createApi({
           },
           options: {
             limit: 50,
+            sort: {
+              static_fire_date_utc: 'asc',
+            },
           },
         },
       }),

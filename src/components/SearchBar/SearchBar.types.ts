@@ -1,5 +1,5 @@
 export interface SearchBarProps<T> {
-  testID: string;
+  testID?: string;
   data: T[];
   searchKeys: string[];
   onSearch: (result: T[]) => void;

@@ -4,6 +4,6 @@ export interface OnSearchCallbackProps {
 }
 
 export interface DateRangeSelectorProps {
-  testID: string;
+  testID?: string;
   onSearch: (dates: OnSearchCallbackProps) => void;
 }

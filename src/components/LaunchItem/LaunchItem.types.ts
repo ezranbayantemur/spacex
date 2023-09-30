@@ -1,5 +1,5 @@
 export interface LaunchItemProps {
-  testID: string;
+  testID?: string;
   id: string;
   image: string;
   name: string;

@@ -6,7 +6,7 @@ import DatePicker from '../DatePicker';
 import styles from './DateRangeSelector.styles';
 import type {DateRangeSelectorProps} from './DateRangeSelector.types';
 
-const DateRangeSelector = ({onSearch}: DateRangeSelectorProps) => {
+const DateRangeSelector = ({testID, onSearch}: DateRangeSelectorProps) => {
   const [startDate, setStartDate] = React.useState<Date>(new Date());
   const [endDate, setEndDate] = React.useState<Date>(new Date());
 
@@ -23,11 +23,23 @@ const DateRangeSelector = ({onSearch}: DateRangeSelectorProps) => {
 
   return (
     <View style={styles.container}>
-      <DatePicker maximumDate={endDate} onDateSelected={setStartDate} />
+      <DatePicker
+        testID={`${testID}_start`}
+        maximumDate={endDate}
+        onDateSelected={setStartDate}
+      />
       <Text style={styles.title}>to</Text>
-      <DatePicker minimumDate={startDate} onDateSelected={setEndDate} />
+      <DatePicker
+        testID={`${testID}_end`}
+        minimumDate={startDate}
+        onDateSelected={setEndDate}
+      />
       <View style={styles.spacer} />
-      <Button text="Search" onPress={handleOnSearch} />
+      <Button
+        testID={`${testID}`}
+        text="Search"
+        onPress={handleOnSearch}
+      />
     </View>
   );
 };

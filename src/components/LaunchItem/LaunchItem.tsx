@@ -6,7 +6,7 @@ import {useNavigation} from '@react-navigation/native';
 import type {LaunchItemProps} from './LaunchItem.types';
 import {routes} from '@route';
 
-const LaunchItem = ({id, name, image, date}: LaunchItemProps) => {
+const LaunchItem = ({testID, id, name, image, date}: LaunchItemProps) => {
   const navigation = useNavigation<any>();
   const formattedDate = format(new Date(date), 'dd MMMM yyyy');
 
@@ -15,7 +15,7 @@ const LaunchItem = ({id, name, image, date}: LaunchItemProps) => {
   };
 
   return (
-    <TouchableOpacity style={styles.container} onPress={handleSelect}>
+    <TouchableOpacity testID={`${testID}_touchable`} style={styles.container} onPress={handleSelect}>
       <Image style={styles.image} resizeMode="contain" source={{uri: image}} />
       <Text style={styles.name}>{name}</Text>
       <Text style={styles.date}>{formattedDate}</Text>

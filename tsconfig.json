@@ -11,7 +11,8 @@
       "@utils": ["src/utils"],
       "@route": ["src/router"],
       "@mocks/*": ["__mocks__/*"],
-      "@helpers/*": ["src/helpers/*"]
+      "@helpers/*": ["src/helpers/*"],
+      "@components/*": ["src/components/*"]
     }
   }
 }

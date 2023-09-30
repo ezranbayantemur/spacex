@@ -50,6 +50,7 @@ const getStories = () => {
     "./src/components/Button/Button.stories.tsx": require("../src/components/Button/Button.stories.tsx"),
     "./src/components/DatePicker/DatePicker.stories.tsx": require("../src/components/DatePicker/DatePicker.stories.tsx"),
     "./src/components/DateRangeSelector/DateRangeSelector.stories.tsx": require("../src/components/DateRangeSelector/DateRangeSelector.stories.tsx"),
+    "./src/components/Input/Input.stories.tsx": require("../src/components/Input/Input.stories.tsx"),
     "./src/components/LaunchItem/LaunchItem.stories.tsx": require("../src/components/LaunchItem/LaunchItem.stories.tsx"),
   };
 };

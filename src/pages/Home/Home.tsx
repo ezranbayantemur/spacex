@@ -11,7 +11,10 @@ const Home = () => {
   const navigation = useNavigation<any>();
 
   const handleSearch = ({start, end}: OnSearchCallbackProps) => {
-    navigation.navigate(routes.SEARCH, {start, end});
+    navigation.navigate(routes.SEARCH, {
+      start: start.toISOString(),
+      end: end.toISOString(),
+    });
   };
 
   return (

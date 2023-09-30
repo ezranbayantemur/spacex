@@ -4,5 +4,14 @@ import SearchBar from './SearchBar';
 import DatePicker from './DatePicker';
 import LaunchItem from './LaunchItem';
 import DateRangeSelector from './DateRangeSelector';
+import ErrorBoundaryPage from './placeholders/ErrorBoundaryPage';
 
-export {Button, Input, SearchBar, DateRangeSelector, DatePicker, LaunchItem};
+export {
+  Button,
+  Input,
+  SearchBar,
+  DateRangeSelector,
+  DatePicker,
+  ErrorBoundaryPage,
+  LaunchItem,
+};

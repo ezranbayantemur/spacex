@@ -1,12 +1,15 @@
 import React from 'react';
 import Router from './router/Router';
 import Provider from './redux/Provider';
+import ErrorBoundary from './container/ErrorBoundary';
 
 const App = () => {
   return (
-    <Provider>
-      <Router />
-    </Provider>
+    <ErrorBoundary>
+      <Provider>
+        <Router />
+      </Provider>
+    </ErrorBoundary>
   );
 };
 

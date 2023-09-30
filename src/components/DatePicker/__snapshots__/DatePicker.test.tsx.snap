@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatePicker unit tests should render correctly 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "borderColor": "#FBFBFB",
+      "borderWidth": 2,
+      "justifyContent": "center",
+      "margin": 8,
+      "opacity": 1,
+      "padding": 8,
+    }
+  }
+  testID="datepicker_touchable"
+>
+  <Text
+    style={
+      {
+        "color": "#FBFBFB",
+        "fontFamily": "Quicksand-Bold",
+        "fontSize": 17,
+      }
+    }
+  >
+    01 Jan 2010
+  </Text>
+  <RNDatePicker
+    date={2010-01-01T00:00:00.000Z}
+    modal={true}
+    mode="date"
+    onCancel={[Function]}
+    onConfirm={[Function]}
+    open={false}
+    testID="datepicker_picker"
+  />
+</View>
+`;

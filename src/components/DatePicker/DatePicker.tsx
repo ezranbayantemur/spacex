@@ -6,7 +6,7 @@ import styles from './DatePicker.styles';
 
 import type {DatePickerProps, DatePickerStyleType} from './DatePicker.types';
 
-const DatePicker = ({onDateSelected, ...rest}: DatePickerProps) => {
+const DatePicker = ({onDateSelected, testID, ...rest}: DatePickerProps) => {
   const [date, setDate] = React.useState(new Date());
   const [isOpen, setIsOpen] = React.useState(false);
   const [isDirty, setIsDirty] = React.useState(false);
@@ -26,11 +26,13 @@ const DatePicker = ({onDateSelected, ...rest}: DatePickerProps) => {
 
   return (
     <TouchableOpacity
+      testID={`${testID}_touchable`}
       style={styles[styleType].container}
       onPress={() => setIsOpen(true)}>
       <Text style={styles[styleType].date}>{format(date, 'dd MMM yyyy')}</Text>
       <RNDatePicker
         {...rest}
+        testID={`${testID}_picker`}
         modal
         mode="date"
         date={date}

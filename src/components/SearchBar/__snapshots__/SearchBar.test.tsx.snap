@@ -6,20 +6,22 @@ exports[`SearchBar unit tests should render correctly 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#E1E1E1",
-          "borderRadius": 5,
-          "margin": 8,
-          "padding": 16,
+          "borderBottomColor": "#E1E1E1",
+          "borderBottomWidth": 1,
+          "margin": 16,
+          "marginVertical": 8,
+          "paddingBottom": 8,
+          "paddingTop": 16,
         }
       }
     >
       <TextInput
         autoCapitalize="none"
         onChangeText={[Function]}
-        placeholder="Ara..."
+        placeholder="Search..."
         style={
           {
-            "fontFamily": "Lato-Regular",
+            "fontFamily": "Quicksand-Regular",
             "fontSize": 15,
             "padding": 0,
           }
